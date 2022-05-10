@@ -1,0 +1,1 @@
+print("The workshop is simple and to the point, but offers vital information which will be relevant for future projects. There have been situations in which I've struggled with git, and the step by step guide has helped clear things up for me.")
