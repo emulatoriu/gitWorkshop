@@ -1,1 +1,0 @@
-print("I like the Github Workshop so far and the Algortimic Thinking Workshop was fun aswell")
