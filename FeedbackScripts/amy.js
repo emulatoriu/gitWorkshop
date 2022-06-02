@@ -1,0 +1,1 @@
+console.log("Leider hat niemand \"Bahnhof\" gesagt");
