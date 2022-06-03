@@ -1,5 +1,17 @@
 console.log("Update Workshop");
-/*//building
+
+/*Link to Game Level 1 und Level 2
+
+https://studio.code.org/projects/gamelab/S1ekj1ANYIViSuRUozMJEFxCJQ-vlqi0z88drv27Rik
+
+
+*/
+/*
+Level 1 und Level2 
+
+
+
+//building
 var building=createSprite(200,300);
 building.setAnimation("building");
 building.visible=false;
@@ -159,5 +171,110 @@ if(student.isTouching(courage)&& courage.visible){
 }
 
 }
+
+
+Level 3
+
+
+var background = createSprite(200,200);
+background.setAnimation("coding");
+
+var student=createSprite(180,200);
+student.setAnimation("player");
+student.scale=0.1;
+
+var student2=createSprite(240,200);
+student2.setAnimation("player2");
+student2.scale=0.1;
+
+var laptop=createSprite(50,50);
+laptop.setAnimation("laptop");
+laptop.scale=0.5;
+
+var coffee=createSprite(350,50);
+coffee.setAnimation("coffee");
+coffee.scale=0.2;
+
+var brain=createSprite(50,350);
+brain.setAnimation("newIdea");
+brain.scale=0.2;
+
+var github=createSprite(310,350);
+github.setAnimation("github");
+github.scale=0.2;
+
+
+
+createEdgeSprites();
+function draw() {
+
+  student.bounceOff(edges);
+  
+    
+  if(keyDown("right")){
+    student.x=student.x+3;
+  }
+  if(keyDown("left")){
+    student.x=student.x-3;
+  }
+  if(keyDown("up")){
+  
+    student.y=student.y-3;
+  }
+  if(keyDown("down")){
+    student.y=student.y+3;
+  }
+ student2.bounceOff(edges);
+  
+  if(keyDown("h")){
+    student2.x=student2.x+3;
+  }
+  if(keyDown("f")){
+    student2.x=student2.x-3;
+  }
+  if(keyDown("t")){
+  
+    student2.y=student2.y-3;
+  }
+  if(keyDown("g")){
+    student2.y=student2.y+3;
+  }
+
+//wenn des koordination 290,50 berührt
+//visibilty false; 
+
+animation();
+  drawSprites();
+
+}
+
+function animation(){
+  if (student.isTouching(laptop)) {
+  laptop.visible=false;
+} 
+if(student.isTouching(coffee)){
+  coffee.visible=false;
+}
+if(student.isTouching(brain)){
+  brain.visible=false;
+}
+if(student.isTouching(github)){
+  github.visible=false;
+}
+  if (student2.isTouching(laptop)) {
+  laptop.visible=false;
+} 
+if(student2.isTouching(coffee)){
+  coffee.visible=false;
+}
+if(student2.isTouching(brain)){
+  brain.visible=false;
+}
+if(student2.isTouching(github)){
+  github.visible=false;
+}
+}
+
+
  */
 
