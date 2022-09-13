@@ -1,0 +1,1 @@
+console.log("Der Git-Workshop war großartig!");
