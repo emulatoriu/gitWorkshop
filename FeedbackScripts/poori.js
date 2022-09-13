@@ -1,0 +1,1 @@
+console.log (" git is amazing und workshop i lokke forward to learn more and more")
